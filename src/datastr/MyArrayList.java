@@ -8,6 +8,21 @@ public class MyArrayList {
 	private int size = DEFAULT_SIZE;
 	
 	
+	public MyArrayList() {
+		list = new char[size];
+	}
+	
+	
+	public MyArrayList(int inputSize) {
+		if(inputSize > 0 && inputSize < 100000) {
+			size = inputSize;
+		}		
+		list = new char[size];
+	}
+	
+	
+	
+	
 	
 	
 	
