@@ -22,7 +22,34 @@ public class MyArrayList {
 	
 	
 	
+	public boolean isEmpty() {
+		//longe pieraksts
+		/*
+		if(howManyElements == 0) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		*/
+		
+		//if-else
+		//return (howManyElements == 0 ? true : false);
+		
+		//ar atgrizto vert
+		return (howManyElements == 0);
+				
+	}
 	
+	private boolean isFull() {
+		if(size == howManyElements) {
+			return true;
+		}
+		else {
+			return false;
+		}
+		
+	}
 	
 	
 	
