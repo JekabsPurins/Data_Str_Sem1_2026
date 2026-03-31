@@ -94,7 +94,7 @@ public class MyArrayList<Ttype> {
 		}
 		
 		if(index == howManyElements) {//gadījums, ja grib kā pēdejo saraksta elemntu pievienot
-			add(element);//list
+			add(element);
 			return;//apstādina funkcija darbību. ja nelietojam return, tad lieotjam elso bloku pēc if
 		}
 		
@@ -160,7 +160,7 @@ public class MyArrayList<Ttype> {
 		
 		ArrayList<Integer> indexArrayList = new ArrayList<Integer>();
 		for(int i = 0; i < howManyElements; i++) {
-			if(list[i].equals(element)) {
+			if(list[i].equals(element)) {//referencu datu tipiem jjāizmanto equals salīdzinašanā
 				indexArrayList.add(i);
 			}
 		}
@@ -184,7 +184,7 @@ public class MyArrayList<Ttype> {
 			howManyNextElements--;
 		}
 		
-		Ttype[] nextElements = (Ttype[])new Object[howManyNextElements];
+		Ttype[] nextElements = (Ttype[]) new Object[howManyNextElements];
 		int indexForNextElementArray = 0;
 		
 		for(int i = 0; i < howManyNextElements; i++) {
@@ -205,7 +205,7 @@ public class MyArrayList<Ttype> {
 		for(int i = 0; i < howManyElements; i++) {
 			for(int j = 0; j < howManyElements; j++) {
 				//if(list[i] > list[j]) {
-				if( ((Comparable)list[i]).compareTo(list[j]) > 0 ) {
+				if( ((Comparable)list[i]).compareTo(list[j]) > 0) {
 					Ttype temp = list[i];
 					list[i] = list[j];
 					list[j] = temp;
